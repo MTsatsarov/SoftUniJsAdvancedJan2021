@@ -1,9 +1,12 @@
 
 function getEventElement(myArr) {
 let result = [];
-    for (let i = 0; i < myArr.length; i+=2) {
-        const element = Number(myArr[i]);
-        result.push(element);
+    for (let i = 0; i < myArr.length; i++) {
+        if (i%2==0) {
+            const element = myArr[i];
+            result.push(element);  
+        }
+        
     }
     return result.join(" ");
 }
