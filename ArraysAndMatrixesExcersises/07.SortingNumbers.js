@@ -1,12 +1,12 @@
 
 function sortNums(arr) {
-     arr.sort((a,b) => a-b)
-     var newArr =[];
+    arr.sort((a, b) => a - b)
+    var newArr = [];
 
-     while (arr.length) {
-         newArr.push(arr.shift())
-         newArr.push(arr.pop())
-     }
+    while (arr.length) {
+        newArr.push(arr.shift())
+        newArr.push(arr.pop())
+    }
     return newArr
 }
 

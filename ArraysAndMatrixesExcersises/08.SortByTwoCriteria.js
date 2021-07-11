@@ -1,7 +1,7 @@
 
 
-function sortByTwoCriteria(arr) {
-    let newArr = arr.sortByTwoCriteria((a, b) => {
+function sortByTwoCriteria(...arr) {
+    let newArr = arr.sort((a, b) => {
 
         if (a - b == 0) {
             return a.localeCompare(b);
@@ -11,10 +11,12 @@ function sortByTwoCriteria(arr) {
             return a - b;
         }
     })
+
+    return newArr;
 }
 
 
-console.log(sortByTwoCriteria(['alpha', 
-'beta', 
-'gamma']
+console.log(sortByTwoCriteria(['alpha',
+    'beta',
+    'gamma']
 ))
