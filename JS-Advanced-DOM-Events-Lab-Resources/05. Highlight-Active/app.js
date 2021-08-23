@@ -6,7 +6,7 @@ function focused() {
 
 
     function onFocus(ev) {
-        ev.target.parentNode.className = 'focused';
+        ev.target.parentNode.className = 'focus';
 
     }
 
