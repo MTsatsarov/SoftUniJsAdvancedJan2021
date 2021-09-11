@@ -13,6 +13,9 @@ class Hex {
     plus(hex) {
         return new Hex(hex.valueOf() + this.value);
     }
+    minus(hex) {
+        return new Hex( this.value - hex.valueOf() );
+    }
 
     parse(string) {
         return parseInt(string,16);
