@@ -12,7 +12,7 @@ function speedRadar(speed, area) {
                 }
 
                 if (currentSpeed >= 20) {
-                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 130 - excessive driving`)
+                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 130 - excessive speeding`)
                 } else {
                     console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 130 - speeding`)
                 }
@@ -30,51 +30,51 @@ function speedRadar(speed, area) {
                 }
 
                 if (currentSpeed >= 20) {
-                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 90 - excessive driving`)
+                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 90 - excessive speeding`)
                 } else {
                     console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 90 - speeding`)
                 }
 
-            }else {
+            } else {
                 console.log(`Driving ${driverSpeed} km/h in a 90 zone`)
             }
             break;
-            case "city":
-                if (driverSpeed > 50 ) {
-                    let currentSpeed = driverSpeed - 50 ;
-                    if (currentSpeed >= 40) {
-                        console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 50 - reckless driving`)
-                        break;
-                    }
-    
-                    if (currentSpeed >= 20) {
-                        console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 50 - excessive driving`)
-                    } else {
-                        console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 50 - speeding`)
-                    }
-    
-                }else {
-                    console.log(`Driving ${driverSpeed} km/h in a 50 zone`)
-                }
-                break;
-                case "residential":
-                    if (driverSpeed > 20  ) {
-                        let currentSpeed = driverSpeed - 20  ;
-                        if (currentSpeed >= 40) {
-                            console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 20 - reckless driving`)
-                            break;
-                        }
-        
-                        if (currentSpeed >= 20) {
-                            console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 20 - excessive driving`)
-                        } else {
-                            console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 20 - speeding`)
-                        }
-        
-                    }else {
-                        console.log(`Driving ${driverSpeed} km/h in a 20 zone`)
-                    }
+        case "city":
+            if (driverSpeed > 50) {
+                let currentSpeed = driverSpeed - 50;
+                if (currentSpeed >= 40) {
+                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 50 - reckless driving`)
                     break;
+                }
+
+                if (currentSpeed >= 20) {
+                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 50 - excessive speeding`)
+                } else {
+                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 50 - speeding`)
+                }
+
+            } else {
+                console.log(`Driving ${driverSpeed} km/h in a 50 zone`)
+            }
+            break;
+        case "residential":
+            if (driverSpeed > 20) {
+                let currentSpeed = driverSpeed - 20;
+                if (currentSpeed >= 40) {
+                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 20 - reckless driving`)
+                    break;
+                }
+
+                if (currentSpeed >= 20) {
+                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 20 - excessive speeding`)
+                } else {
+                    console.log(`The speed is ${currentSpeed} km/h faster than the allowed speed of 20 - speeding`)
+                }
+
+            } else {
+                console.log(`Driving ${driverSpeed} km/h in a 20 zone`)
+            }
+            break;
 
         default:
             break;
